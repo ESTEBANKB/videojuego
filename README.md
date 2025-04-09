@@ -18,7 +18,6 @@ Rescatar animales que están en peligro o abandonados.
 
 Capturas de pantalla
 -
-![Uploading Captura 1![Captura 8](https://github.com/user-attachments/assets/d79882a2-40c9-404b-8776-571646af168f)
 
 ![Captura 1](https://github.com/user-attachments/assets/76f6d063-2ba0-4d80-9fd1-31aa4beb400c)
 ![Captura 2 ](https://github.com/user-attachments/assets/ab1c5d51-4e41-4f9d-a7ad-caf312b06c97)
