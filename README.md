@@ -3,7 +3,7 @@
 - Samuel Cano Echeverri
 
 
-¿De que trata?
+- De que trata?
 elvideojuego es una aventura en 2D que se desarrolla en un mundo abierto, 
 donde el jugador toma el papel de un joven que tendra como objetivo rescatar animales y intebtar 
 concientizar sobre el maltrato animal a través de  misiones, diálogos e interacciones 
