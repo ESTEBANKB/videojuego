@@ -1,6 +1,6 @@
-Johan Esteban Garcia Ochoa 
-Andrés Eduardo Romero Cabrales 
-Samuel Cano Echeverri
+- Johan Esteban Garcia Ochoa 
+- Andrés Eduardo Romero Cabrales 
+- Samuel Cano Echeverri
 
 
 ¿De que trata?
@@ -11,10 +11,10 @@ con personajes del entorno.
 
 El jugador debe:
 
-Explorar el mapa en busca de pistas.
-Interactuar con NPCs que le enseñan sobre diferentes tipos de maltrato animal.
-Recolectar objetos (como monedas o suministros).
-Rescatar animales que están en peligro o abandonados.
+1. Explorar el mapa en busca de pistas.
+2. Interactuar con NPCs que le enseñan sobre diferentes tipos de maltrato animal.
+3. Recolectar objetos (como monedas o suministros).
+4. Rescatar animales que están en peligro o abandonados.
 
 Capturas de pantalla
 -
