@@ -1,6 +1,7 @@
 #items
 import constantes
 import pygame.sprite
+from sonidos import SistemaSonido
 
 
 
@@ -20,7 +21,10 @@ class Item(pygame.sprite.Sprite):
         
          # Guardar la posición fija en el mundo
         self.posicion_inicial = (x, y)
-
+        
+        # Inicializar sistema de sonido
+        self.sistema_sonido = SistemaSonido()
+ 
     def update(self, personaje):
         """Actualiza la animación de la moneda y detecta colisión con el personaje."""
         
@@ -32,6 +36,7 @@ class Item(pygame.sprite.Sprite):
         if self.rect.colliderect(personaje.rect):
             if hasattr(personaje, "score"):  # Asegurarse de que `score` existe en el personaje
                 personaje.score += 1  # Sumar 1 punto
+                self.sistema_sonido.reproducir_moneda()  # Reproducir sonido de moneda
             else:
                 print(" Advertencia: El personaje no tiene un atributo 'score'.")
             self.kill()  # Eliminar la moneda del juego

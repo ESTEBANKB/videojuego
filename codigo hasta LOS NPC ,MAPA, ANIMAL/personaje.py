@@ -1,6 +1,6 @@
 # personaje
 import pygame
-import constantes
+import constantes 
 
 
 class Personaje(pygame.sprite.Sprite):
@@ -9,20 +9,22 @@ class Personaje(pygame.sprite.Sprite):
         """Inicializa el personaje con las imágenes cargadas y su posición."""
         self.imagenes = imagenes  # Diccionario con imágenes organizadas por dirección
         self.direccion_actual = "abajo"  # Dirección inicial
-        self.indice_imagen = 0
-        self.rect = pygame.Rect(x, y, constantes.ANCHO_PERSONAJE, constantes.ALTO_PERSONAJE)
-        self.flip = False
-        self.update_time = pygame.time.get_ticks()
+        self.indice_imagen = 0 # Índice de la imagen actual
+        self.rect = pygame.Rect(x, y, constantes.ANCHO_PERSONAJE, constantes.ALTO_PERSONAJE) # Rectángulo que representa al personaje
+        self.flip = False # Bandera para saber si el personaje está girado o no
+        self.update_time = pygame.time.get_ticks() # Tiempo actual para saber si es hora de cambiar la imagen
         
-        self.vel_x = 0
-        self.vel_y = 0
+        self.vel_x = 0 # Velocidad en x
+        self.vel_y = 0 # Velocidad en y
         
         #  Agregar el puntaje inicial
         self.score = 0
         
-    def mover(self, teclas,colisiones):
+    def mover(self, teclas,colisiones=None): 
+        
+
         """Mueve al personaje en la pantalla y cambia su dirección."""
-        self.vel_x = 0
+        self.vel_x = 0 
         self.vel_y = 0
         moviendo = False  # Variable para detectar si se está moviendo
         # movimineto horizontal
@@ -34,6 +36,7 @@ class Personaje(pygame.sprite.Sprite):
             self.vel_x = constantes.VELOCIDAD_PERSONAJE
             self.direccion_actual = "derecha"
             moviendo = True
+            # movimiento vertical
         if teclas[pygame.K_w] or teclas[pygame.K_UP]:  
             self.vel_y = -constantes.VELOCIDAD_PERSONAJE
             self.direccion_actual = "arriba"
@@ -75,7 +78,7 @@ class Personaje(pygame.sprite.Sprite):
         self.image = self.imagenes[self.direccion_actual][self.indice_imagen]
         
         
-        # 🔍 Verificar valores en cada actualización
+        # Verificar valores en cada actualización
        # print("Dirección actual:", self.direccion_actual)
         #print("Índice imagen:", self.indice_imagen)
         #print("Diccionario imágenes:", self.imagenes.keys())
@@ -83,5 +86,5 @@ class Personaje(pygame.sprite.Sprite):
     def dibujar(self, ventana):
         """Dibuja al personaje en la pantalla."""
         imagen_actual = self.imagenes[self.direccion_actual][self.indice_imagen]
-        ventana.blit(imagen_actual, self.rect)
+        ventana.blit(imagen_actual, self.rect) # Dibujar la imagen en la posición actual
 
