@@ -1,6 +1,5 @@
 - Johan Esteban Garcia Ochoa 
-- Andrés Eduardo Romero Cabrales 
-- Samuel Cano Echeverri
+
 
 
 - De que trata?
