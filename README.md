@@ -60,4 +60,4 @@ dinamica del juego
 3. Entrar en las carpetas recursos>imágenes>caracteres en esta última se encuentra la carpeta comprimida llamada recursos, tiene que descomprimirla 
 4. Abrir la carpeta (codigo hasta los NPC...) en VSC.
 5. verificar o instalar  pygame con el comando  (pip install pygame )
-6. Al abrirla y verificar que ya tengas el pygame instalado ejecutará en INICIO.PY
+6. Al abrirla y verificar que ya tengas el pygame instalado ejecutará en INICIO.PY o python inicio.PY en tu compilador 
