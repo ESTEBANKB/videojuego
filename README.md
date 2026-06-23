@@ -57,7 +57,7 @@ dinamica del juego
 1. Descargar el archivo (codigo hasta LOS NPC,MAPA,ANIMAL ) que se encuentra en el repositorio (Videojuego),
    en el github del usuario ESTEBANKB
 2. Descomprimir el archivo en tu equipo 
-3. Entrar en las carpetas recursos>imágenes>caracteres en esta última se encuentra la carpeta comprimida llamada TILES, tiene que descomprimirla dentro de la misma carpeta (Caracteres)
+3. Entrar en las carpetas recursos>imágenes>caracteres en esta última se encuentra la carpeta comprimida llamada recursos, tiene que descomprimirla 
 4. Abrir la carpeta (codigo hasta los NPC...) en VSC.
 5. verificar o instalar  pygame con el comando  (pip install pygame )
 6. Al abrirla y verificar que ya tengas el pygame instalado ejecutará en INICIO.PY
